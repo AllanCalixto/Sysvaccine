@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: montserrat;
+    font-size: 15px;
+}
+
+nav {
+    position: absolute;
+    background-color: teal;
+    width: 250px;
+    height: 93%;
+}
+
+a {
+    text-decoration: none;
+    font-family: montserrat;
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: teal;
+    transition: background-color .5s;
+}
+
+ul {
+    list-style: none;
+    top: 3px;
+    width: 100%;
+    position: absolute;
+}
+
+li {
+    border-radius: 10px;
+    text-align: left;
+    font-family: montserrat;
+}
+
+.img-primary {
+    background-color: tomato;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
