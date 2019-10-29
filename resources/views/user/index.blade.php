@@ -189,7 +189,7 @@
                             <!-- senha -->
                             </label>
 
-                        <a class="password" href="/esqueciminhasenha">Esqueci minha senha</a>
+                        <a class="password" href="{{route('resetpassword')}}">Esqueci minha senha</a>
 
                         <button class="btn btn-second">Entrar</button>
                     </form>

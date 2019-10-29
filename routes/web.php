@@ -15,3 +15,4 @@ Route::get('/', "UserController@index")->name('index');
 Route::post('/', "UserController@create")->name('create');
 Route::post('/dashboard', "UserController@authenticate")->name('dashboard');
 Route::get('/dashboard', "UserController@index")->name('index');
+Route::get('/esqueciminhasenha', "UserController@resetpassword")->name('resetpassword');
