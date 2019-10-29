@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SysVaccine</title>
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
     <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f82b3ec5fe.js" crossorigin="anonymous"></script>
 
@@ -15,52 +15,52 @@
 </head>
 
 <body>
-    <div class="div-top">
+<div class="div-top">
 
-        <div class="img-primary">
-            <label>
-                <h2>SysVaccine</h2>
+<div class="img-primary">
+    <label>
+        <h2>SysVaccine</h2>
+</label>
+</div>
+
+<div class="logo-top">
+    <label>
+       
+        
+</label>
+</div>
+
+</div>
+
+<div class="nav-primary">
+<nav>
+    <ul>
+        <label>
+            
+            <li class="description"><a href=""><i class="far fa-address-card">  PERFIL</i></a></li>
         </label>
-        </div>
 
-        <div class="logo-top">
-            <label>
-               
-                
+
+        <label>
+            <li class="description"><a href=""><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
         </label>
-        </div>
 
-    </div>
+        <label>
+             <li class="description"><a href=""><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
+        </label>
 
-    <div class="nav-primary">
-        <nav>
-            <ul>
-                <label>
-                    
-                    <li><a href=""><i class="far fa-address-card">  PERFIL</i></a></li>
-                </label>
+        <label>
+            <li class="description"><a href=""><i class="fas fa-search">  CONSULTAR HISTÓRICO</i></a></li>
+       </label>
 
+        <label>
+             <li class="description"><a href=""><i class="far fa-times-circle">  SAIR</i></a></li>
+        </label>
 
-                <label>
-                    <li><a href=""><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
-                </label>
+    </ul>
+</nav>
 
-                <label>
-                     <li><a href=""><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
-                </label>
-
-                <label>
-                    <li><a href=""><i class="fas fa-search">  CONSULTAR HISTÓRICO</i></a></li>
-               </label>
-
-                <label>
-                     <li><a href=""><i class="far fa-times-circle">  SAIR</i></a></li>
-                </label>
-
-            </ul>
-        </nav>
-
-    </div>
+</div>
 
 </body>
 
