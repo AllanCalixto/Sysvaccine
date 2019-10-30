@@ -64,46 +64,45 @@
 
                     <i class="fas fa-map icon-modify"></i>
                     <!-- SELECIONANDO ESTADO ONDE MORA -->
-                    <select name="estado" name="estado" id="estado">
+                    <select name="uf" id="uf">
                             <option value="#">UF</option>
                             <option value="#">--</option>
-                            <option value="ac">AC</option>
-                            <option value="al">AL</option>
-                            <option value="am">AM</option>
-                            <option value="ap">AP</option>
-                            <option value="ba">BA</option>
-                            <option value="ce">CE</option>
-                            <option value="df">DF</option>
-                            <option value="es">ES</option>
-                            <option value="go">GO</option>
-                            <option value="ma">MA</option>
-                            <option value="mt">MT</option>
-                            <option value="ms">MS</option>
-                            <option value="mg">MG</option>
-                            <option value="pa">PA</option>
-                            <option value="pb">PB</option>
-                            <option value="pr">PR</option>
-                            <option value="pe">PE</option>
-                            <option value="pi">PI</option>
-                            <option value="rj">RJ</option>
-                            <option value="rn">RN</option>
-                            <option value="ro">RO</option>
-                            <option value="rs">RS</option>
-                            <option value="rr">RR</option>
-                            <option value="sc">SC</option>
-                            <option value="se">SE</option>
-                            <option value="sp">SP</option>
-                            <option value="to">TO</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AM">AM</option>
+                            <option value="AP">AP</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RO">RO</option>
+                            <option value="RS">RS</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
                             </select>
                     <!-- SELECIONANDO ESTADO ONDE MORA -->
 
                     <i class="fas fa-venus-mars icon-modify"></i>
-                            <select name="Sexo" id="sexo">
-                                    <option value="S">Sexo</option>
-                                    <option value="#">--</option>
-                                    <option value="M">Masculino</option>
-                                    <option value="F">Feminino</option>
-                                    <option value="O">Outros</option>
+                            <select name="sexo" id="sexo">
+                                    <option value="s">Sexo</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="outros">Outros</option>
                                 </select>
                                 <!-- sexo -->
                     </label>

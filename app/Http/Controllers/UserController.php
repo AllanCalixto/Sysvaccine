@@ -15,7 +15,7 @@ class UserController extends Controller
 
       if(Auth::attempt($credentials))
       {
-      
+
         return view('dashboard');
       }
       else {
@@ -44,9 +44,16 @@ class UserController extends Controller
     public function create(Request $request)
     {
         return User::create([
-          'name'    =>$request['name'],
-          'email'   =>$request['email'],
-          'password' =>bcrypt($request['password']),
+          'name'        =>$request['name'],
+          'lastname'    =>$request['lastname'],
+          'birth'       =>$request['birth'],
+          'fone'        =>$request['fone'],
+          'city'        =>$request['city'],
+          'uf'          =>$request['uf'],
+          'sexo'        =>$request['sexo'],
+          'cpf'         =>$request['cpf'],
+          'email'       =>$request['email'],
+          'password'    =>bcrypt($request['password']),
         ]);
     }
 
