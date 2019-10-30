@@ -225,24 +225,24 @@
 
 <script type="text/javascript">
 function validaForm(frm) {
-    if(frm.USU_Nome.value ==""|| frm.USU_Nome.value == null|| frm.USU_Nome.value<3){
+    if(frm.name.value ==""|| frm.name.value == null|| frm.name.value<3){
         alert("Por favor, insira um nome válido.");
-        frm.USU_Nome.focus();
+        frm.name.focus();
         return false;
     }
-    if(frm.USU_Sobrenome.value ==""|| frm.USU_Sobrenome.value == null|| frm.USU_Sobrenome.value<3){
+    if(frm.name.value ==""|| frm.name.value == null|| frm.name.value<3){
         alert("Por favor, insira um sobrenome válido.");
-        frm.USU_Nome.focus();
+        frm.name.focus();
         return false;
     }
-    if(frm.USU_DtNasc.value ==""|| frm.USU_DtNasc.value == null|| frm.USU_DtNasc.value<10){
+    if(frm.birth.value ==""|| frm.birth.value == null|| frm.birth.value<10){
         alert("Por favor, insira um data de nascimento válida.");
-        frm.USU_Nome.focus();
+        frm.birth.focus();
         return false;
     }
-    if(frm.USU_Fone.value ==""|| frm.USU_Fone.value == null|| frm.USU_Fone.value<11){
+    if(frm.fone.value ==""|| frm.fone.value == null|| frm.fone.value<11){
         alert("Por favor, insira um número de telefone válido.");
-        frm.USU_Fone.focus();
+        frm.fone.focus();
         return false;
     }
     if(frm.email.value.indexOf("@") == -1 ||
