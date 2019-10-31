@@ -39,6 +39,7 @@ ul {
     align-items: center;
     padding: .5rem 1rem;
     width: 100%;
+    position: absolute;
 }
 
 .description {
