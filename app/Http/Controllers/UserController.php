@@ -36,6 +36,8 @@ class UserController extends Controller
       return view('user.esqueciminhasenha');
     }
 
+  
+
     /**
      * Show the form for creating a new resource.
      *
