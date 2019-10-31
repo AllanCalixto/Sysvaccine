@@ -8,6 +8,7 @@
     <title>SysVaccine</title>
     <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
     <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f82b3ec5fe.js" crossorigin="anonymous"></script>
 
 
@@ -15,47 +16,40 @@
 </head>
 
 <body>
-<div class="div-top">
 
+<header class="header-primary">
 <div class="img-primary">
     <label>
         <h2>SysVaccine</h2>
 </label>
 </div>
+</header>
 
-<div class="logo-top">
-    <label>
-       
-        
-</label>
-</div>
 
-</div>
 
 <div class="nav-primary">
 <nav>
     <ul>
-        <label>
-            
-            <li class="description"><a href=""><i class="far fa-address-card">  PERFIL</i></a></li>
-        </label>
+        
+            <li class="description"><a href=""><i class="fas fa-address-card">  PERFIL</i></a></li>
+    
 
 
-        <label>
+    
             <li class="description"><a href=""><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
-        </label>
+        
 
-        <label>
+        
              <li class="description"><a href=""><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
-        </label>
+        
 
-        <label>
+        
             <li class="description"><a href=""><i class="fas fa-search">  CONSULTAR HISTÓRICO</i></a></li>
-       </label>
+       
 
-        <label>
-             <li class="description"><a href=""><i class="far fa-times-circle">  SAIR</i></a></li>
-        </label>
+        
+             <li class="description"><a href=""><i class="fas fa-times-circle">  SAIR</i></a></li>
+        
 
     </ul>
 </nav>
