@@ -36,6 +36,22 @@ class UserController extends Controller
       return view('user.esqueciminhasenha');
     }
 
+    public function perfil(){
+        return view('perfil');
+    }
+
+    public function cadastravacina(){
+        return view('cadastravacina');
+    }
+
+    public function consultarhistorico(){
+        return view('consultarhistorico');
+    }
+
+    public function sair(){
+        return view('index');
+    }
+
   
 
     /**

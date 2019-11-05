@@ -16,3 +16,12 @@ Route::post('/', "UserController@create")->name('create');
 Route::post('/dashboard', "UserController@authenticate")->name('dashboard');
 Route::get('/dashboard', "UserController@index")->name('index');
 Route::get('/esqueciminhasenha', "UserController@resetpassword")->name('resetpassword');
+Route::get('/dashboard/perfil', "UserController@perfil")->name('perfil');
+Route::get('/dashboard/cadastravacina', "UserController@cadastravacina")->name('cadastravacina');
+Route::get('/dashboard/consultarhistorico', "UserController@consultarhistorico")->name('consultarhistorico');
+
+
+
+
+
+Route::get('dashboard/qrcode', function(){return QrCode :: size (300) -> generate ('Cartão de vacina gerado com sucesso !');})->name('qrcode');
