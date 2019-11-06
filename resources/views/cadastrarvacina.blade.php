@@ -69,7 +69,7 @@
                     </select>
     </label>
 
-    <button id="singup" class="btn-primary">Cadastrar</button>
+    <button id="singup-padrao" class="btn-primary">Cadastrar</button>
     </form>
 </div>
 
@@ -85,8 +85,8 @@
     <label for="">
                     <input type="text" placeholder="Digite a vacina opcional">
                 </label>
-    <button id="singup" class="btn-second">Cadastrar</button>
-    </form>
+    <button id="singup-opcional" class="btn-second">Cadastrar</button>
+    </form>e
 </div>
 
 </html>
