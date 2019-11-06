@@ -23,6 +23,8 @@
 
 <div class="cadastrar">
 
+<form action="" method="">
+
 
     <label for="">
     <p>Data de Agendamento</p>
@@ -68,11 +70,12 @@
     </label>
 
     <button id="singup" class="btn-primary">Cadastrar</button>
-
+    </form>
 </div>
 
 
 <div class="cadastrar-opcional">
+<form action="" method="">
     <label for="">
                 <p>Data de Agendamento</p>
                 <i class="far fa-calendar-alt"></i>
@@ -83,7 +86,7 @@
                     <input type="text" placeholder="Digite a vacina opcional">
                 </label>
     <button id="singup" class="btn-second">Cadastrar</button>
-
+    </form>
 </div>
 
 </html>
