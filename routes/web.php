@@ -19,6 +19,7 @@ Route::get('/esqueciminhasenha', "UserController@resetpassword")->name('resetpas
 Route::get('/dashboard/perfil', "UserController@perfil")->name('perfil');
 Route::get('/dashboard/cadastravacina', "UserController@cadastravacina")->name('cadastravacina');
 Route::get('/dashboard/consultarhistorico', "UserController@consultarhistorico")->name('consultarhistorico');
+Route::get('/dashboard/emitircartao', "UserController@emitircartao")->name('emitircartao');
 
 
 

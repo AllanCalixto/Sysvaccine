@@ -41,18 +41,22 @@ class UserController extends Controller
     }
 
     public function cadastravacina(){
-        return view('cadastravacina');
+        return view('cadastrarvacina');
     }
 
     public function consultarhistorico(){
         return view('consultarhistorico');
     }
 
+    public function emitircartao(){
+        return view('emitircartao');
+    }
+
     public function sair(){
         return view('index');
     }
 
-  
+
 
     /**
      * Show the form for creating a new resource.
@@ -83,7 +87,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        
+
     }
 
     /**
