@@ -30,26 +30,26 @@
 <div class="nav-primary">
 <nav>
     <ul>
-        
+
             <li class="description"><a href="{{route('perfil')}}"><i class="fas fa-address-card">  PERFIL</i></a></li>
-    
 
 
-    
+
+
             <li class="description"><a href="{{route('cadastravacina')}}"><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
-        
 
-        
-             <li class="description"><a href="{{route('qrcode')}}"><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
-        
 
-        
+
+             <li class="description"><a href="{{route('emitircartao')}}"><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
+
+
+
             <li class="description"><a href="{{route('consultarhistorico')}}"><i class="fas fa-search">  CONSULTAR HISTÓRICO</i></a></li>
-       
 
-        
+
+
              <li class="description"><a href=""><i class="fas fa-times-circle">  SAIR</i></a></li>
-        
+
 
     </ul>
 </nav>

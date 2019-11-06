@@ -48,6 +48,10 @@ class UserController extends Controller
         return view('consultarhistorico');
     }
 
+    public function emitircartao(){
+        return view('emitircartao');
+    }
+
     public function sair(){
         return view('index');
     }
