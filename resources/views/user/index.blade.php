@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sysvaccine</title>
+    
     <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-png" />
     <link rel="stylesheet" href=" {{ asset('css/stylefront.css')}}">
     <script src="https://kit.fontawesome.com/f82b3ec5fe.js" crossorigin="anonymous"></script>
