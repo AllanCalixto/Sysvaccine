@@ -30,6 +30,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\Vacina' => $baseDir . '/app/Vacina.php',
     'BaconQrCode\\Common\\AbstractEnum' => $vendorDir . '/bacon/bacon-qr-code/src/BaconQrCode/Common/AbstractEnum.php',
     'BaconQrCode\\Common\\BitArray' => $vendorDir . '/bacon/bacon-qr-code/src/BaconQrCode/Common/BitArray.php',
     'BaconQrCode\\Common\\BitMatrix' => $vendorDir . '/bacon/bacon-qr-code/src/BaconQrCode/Common/BitMatrix.php',

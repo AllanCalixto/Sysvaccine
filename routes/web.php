@@ -21,6 +21,9 @@ Route::get('/dashboard/cadastravacina', "UserController@cadastravacina")->name('
 Route::get('/dashboard/consultarhistorico', "UserController@consultarhistorico")->name('consultarhistorico');
 Route::get('/dashboard/emitircartao', "UserController@emitircartao")->name('emitircartao');
 
+Route::get('dashboard/vacinas/cadastrar', "VacinaController@index")->name('cadastrarvacina');
+Route::post('dashboard/vacinas/cadastrar', "VacinaController@create")->name('novavacina');
+
 
 
 

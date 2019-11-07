@@ -23,51 +23,52 @@
         <tbody>
             <tr>
                 <th scope="row">
-                    <form class="" action="" method="" onsubmit="">
+                    <form class="" action="{{route('cadastrarvacina')}}" method="post" onsubmit="">
+                      @csrf
                         <!-- para preenchimento do back-end -->
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Selecione a vacina </label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="nomevacina" name="nomevacina">
                                 <!-- Values em # para preenchimento do back-end conforme modelagem do banco -->
-                                      <option value="#"></option>
-                                      <option value="#">BCG</option>
-                                      <option value="#">DTP(difteria, tétano e coqueluche)</option>
-                                      <option value="#">DUPLA ADULTO</option>
-                                      <option value="#">FEBRE AMARELA</option>
-                                      <option value="#">INFLUENZA</option>
-                                      <option value="#">HEPATITE A</option>
-                                      <option value="#">HEPATITE B</option>
-                                      <option value="#">HPV</option>
-                                      <option value="#">MENINGOCÓCICA C (conjulgada)</option>
-                                      <option value="#">PENTA (difteria, tétano, coqueluche, hepatite B e infecções causadas pelo Haemophilus influenzae B)</option>
-                                      <option value="#">PNEUMOCÓCICA 10 VALENTE (conjulgada)</option>
-                                      <option value="#">PNEUMOCÓCICA 23 VALENTE</option>
-                                      <option value="#">POLIOMELITE 1,2 e 3 (VIP)</option>
-                                      <option value="#">ROTAVIRUS</option>
-                                      <option value="#">TÉTANO</option>
-                                      <option value="#">TETRA VIRAL</option>
-                                      <option value="#">TRíPLICE VIRAL</option>
-                                      <option value="#">VARICELA ATENUADA</option>
+                                      <option value="-1"></option>
+                                      <option value="BCG">BCG</option>
+                                      <option value="DTP(difteria, tétano e coqueluche)">DTP(difteria, tétano e coqueluche)</option>
+                                      <option value="DUPLA ADULTO">DUPLA ADULTO</option>
+                                      <option value="FEBRE AMARELA">FEBRE AMARELA</option>
+                                      <option value="INFLUENZA">INFLUENZA</option>
+                                      <option value="HEPATITE A">HEPATITE A</option>
+                                      <option value="HEPATITE B">HEPATITE B</option>
+                                      <option value="HPV">HPV</option>
+                                      <option value="MENINGOCÓCICA C (conjulgada)">MENINGOCÓCICA C (conjulgada)</option>
+                                      <option value="PENTA (difteria, tétano, coqueluche, hepatite B e infecções causadas pelo Haemophilus influenzae B)">PENTA (difteria, tétano, coqueluche, hepatite B e infecções causadas pelo Haemophilus influenzae B)</option>
+                                      <option value="PNEUMOCÓCICA 10 VALENTE (conjulgada)">PNEUMOCÓCICA 10 VALENTE (conjulgada)</option>
+                                      <option value="PNEUMOCÓCICA 23 VALENTE">PNEUMOCÓCICA 23 VALENTE</option>
+                                      <option value="POLIOMELITE 1,2 e 3 (VIP)">POLIOMELITE 1,2 e 3 (VIP)</option>
+                                      <option value="ROTAVIRUS">ROTAVIRUS</option>
+                                      <option value="TÉTANO">TÉTANO</option>
+                                      <option value="TETRA VIRAL">TETRA VIRAL</option>
+                                      <option value="TRíPLICE VIRAL">TRíPLICE VIRAL</option>
+                                      <option value="VARICELA ATENUADA">VARICELA ATENUADA</option>
 
-                                      
+
                                     </select>
                         </div>
 
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Tipo de Dose </label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="dose" name="dose">
                                           <option value="#"></option>
-                                          <option value="#">1º Dose</option>
-                                          <option value="#">2º Dose</option>
-                                          <option value="#">3º Dose</option>
-                                          <option value="#">Reforço</option>
+                                          <option value="dose1">1º Dose</option>
+                                          <option value="dose2">2º Dose</option>
+                                          <option value="dose3">3º Dose</option>
+                                          <option value="reforco">Reforço</option>
                                         </select>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-2">
                                 <label for="i_data">Data do Agendamento</label>
-                                <input type="date" class="form-control" id="i_data">
+                                <input type="date" class="form-control" id="data" name="data">
                             </div>
 
 

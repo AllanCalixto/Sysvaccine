@@ -3,25 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
-use App\User;
-
-class UserController extends Controller
+use App\Vacina;
+class VacinaController extends Controller
 {
-
-    public function authenticate(Request $request)
-    {
-      $credentials = $request->only('email','password');
-
-      if(Auth::attempt($credentials))
-      {
-
-        return view('dashboard');
-      }
-      else {
-        return redirect()->back()->with('msg','Credenciais Invalidas');
-      }
-    }
     /**
      * Display a listing of the resource.
      *
@@ -29,23 +13,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.index');
+        return view('user.cadastrarvacina');
     }
-
-    public function resetpassword(){
-      return view('user.esqueciminhasenha');
-    }
-
-    public function perfil(){
-        return view('perfil');
-    }
-
-
-    public function sair(){
-        return view('index');
-    }
-
-
 
     /**
      * Show the form for creating a new resource.
@@ -54,18 +23,11 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
-        return User::create([
-          'name'        =>$request['name'],
-          'lastname'    =>$request['lastname'],
-          'birth'       =>$request['birth'],
-          'fone'        =>$request['fone'],
-          'city'        =>$request['city'],
-          'uf'          =>$request['uf'],
-          'sexo'        =>$request['sexo'],
-          'cpf'         =>$request['cpf'],
-          'email'       =>$request['email'],
-          'password'    =>bcrypt($request['password']),
-        ]);
+      return Vacina::create([
+        'nomevacina'  =>$request['nomevacina'],
+        'dose'        =>$request['dose'],
+        'data'      =>$request['data'],
+      ]);
     }
 
     /**
@@ -76,7 +38,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**

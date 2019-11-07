@@ -36,7 +36,7 @@
 
 
 
-            <li class="description"><a href="{{route('cadastravacina')}}"><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
+            <li class="description"><a href="{{route('cadastrarvacina')}}"><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
 
 
 
