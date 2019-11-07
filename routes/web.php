@@ -29,4 +29,4 @@ Route::get('dashboard/cartao/emitir',        "CartaoController@index")->name('em
 
 
 // ROTAS QRCODE
-Route::get('dashboard/qrcode', function(){return QrCode :: size (300) -> generate ('Cartão de vacina gerado com sucesso !');})->name('qrcode');
+Route::get('dashboard/qrcode', function(){return QrCode :: size (300) -> generate ('Cartao gerado com sucesso!');})->name('qrcode');
