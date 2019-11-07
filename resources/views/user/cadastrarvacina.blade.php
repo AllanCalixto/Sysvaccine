@@ -17,7 +17,8 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Cadastro de Vacina</th>
+           
+                <th scope="col"><i class="fas fa-list-alt"></i>  Cadastro de Vacina  </th>
             </tr>
         </thead>
         <tbody>
@@ -73,7 +74,10 @@
 
 
                         </div>
-                        <button type="submit" onclick="alert('Cadastro realizado com sucesso!')" class="btn btn-primary">Cadastrar</button>
+
+                        <div class="btn-cadastrarvacina">
+                        <button type="submit" onclick="alert('Cadastro realizado com sucesso!')" class="btn btn-primary" id="btn-cadastrar">Cadastrar</button>
+                        </div>
                     </form>
                 </th>
             </tr>

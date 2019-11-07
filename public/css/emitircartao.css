@@ -3,3 +3,28 @@
     margin: 0;
     padding: 0;
 }
+
+.btn-qrcode {
+    margin-left: 39%;
+}
+
+#btn-qrcode {
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: center;
+    font-weight: bold;
+    border-width: 0px;
+    margin-top: 1rem;
+    padding: 10px 50px;
+    background-color: rgb(0, 78, 122);
+    border-radius: 15px;
+    border-color: rgb(0, 78, 122);
+    transition: background-color .5s;
+}
+
+#btn-qrcode:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border: 1px solid black;
+}

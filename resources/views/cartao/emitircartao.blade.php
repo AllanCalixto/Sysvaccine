@@ -15,7 +15,7 @@
   <table class="table">
           <thead>
               <tr>
-                  <th scope="col">Cartão de Vacina</th>
+                  <th scope="col"><i class="fas fa-file-medical"></i>  Cartão de Vacina</th>
               </tr>
           </thead>
           <tbody>
@@ -84,7 +84,9 @@
           </tbody>
       </table>
 
-            <button type="submit" class="" name="btn-qrcode" id="btn-qrcode">Gerar QRCode</button>
+            <div class="btn-qrcode">
+            <button type="submit" class="btn btn-primary" name="btn-qrcode" id="btn-qrcode">Gerar QR Code</button>
+            </div>
       </form>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
