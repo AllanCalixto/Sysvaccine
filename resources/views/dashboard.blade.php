@@ -44,7 +44,7 @@
 
 
 
-            <li class="description"><a href="http://localhost:8000/dashboard/cartao/emitir/relatorio"><i class="fas fa-search">  CONSULTAR HISTÓRICO</i></a></li>
+            <li class="description"><a href="http://localhost:8000/dashboard/cartao/emitir/relatorio"><i class="fas fa-search">  VISUALIZAR CARTÕES</i></a></li>
 
 
 

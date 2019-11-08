@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="{{asset('css/emitircartao.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Relatório Cartão de Vacina</title>
+    <title>Cartão de Vacina</title>
 </head>
 <body>
   <div class="card border">
     <div class="card-body">
-      <h5 class="card-title">Histórico de Vacinas</h5>
+      <h5 class="card-title">Cartão de Vacinas</h5>
         <table class="table table-ordered table-hover">
           <thead>
             <tr>
@@ -56,6 +56,7 @@
             @endforeach
           </tbody>
         </table>
+          <button type="submit" class="btn btn-primary" onclick="window.print()" name="btn-imprimir" id="btn-imprimir">Imprimir</button>
     </div>
   </div>
 
