@@ -17,6 +17,11 @@ class CartaoController extends Controller
         return view('cartao.emitircartao');
     }
 
+    public function consultar()
+    {
+      
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -24,7 +29,8 @@ class CartaoController extends Controller
      */
     public function create()
     {
-        //
+        $cartao = Cartao::all();
+        return view('cartao.form_cartao', compact('cartao'));
     }
 
     /**
@@ -35,7 +41,16 @@ class CartaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      return Cartao::create([
+        'i_nome'          =>$request['i_nome'],
+        'i_sobrenome'     =>$request['i_sobrenome'],
+        'i_cpf'           =>$request['i_cpf'],
+        'i_data'          =>$request['i_data'],
+        'i_fone'          =>$request['i_fone'],
+        'i_cidade'        =>$request['i_cidade'],
+        'i_estado'        =>$request['i_estado'],
+      ]);
+      return view('sucesso');
     }
 
     /**

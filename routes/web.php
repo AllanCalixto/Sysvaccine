@@ -26,6 +26,12 @@ Route::post('dashboard/vacinas/cadastrar',   "VacinaController@create")->name('n
 
 // ROTAS DE CARTAO
 Route::get('dashboard/cartao/emitir',        "CartaoController@index")->name('emitircartao');
+Route::get('dashboard/cartao/emitir/relatorio',        "CartaoController@create")->name('relatorio');
+Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store")->name('relatorio');
+
+
+
+
 
 
 // ROTAS QRCODE

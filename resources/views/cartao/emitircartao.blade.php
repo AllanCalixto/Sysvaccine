@@ -21,71 +21,50 @@
           <tbody>
               <tr>
                   <th scope="row">
-                      <form action="{{route('qrcode')}}" method="">
+                      <form action="{{route('relatorio')}}" method="post">
+                        @csrf
                            <div class="form-row">
                               <div class="form-group col-md-5">
                                   <label for="i_nome">Nome</label>
-                                  <input type="text" class="form-control" id="i_nome">
+                                  <input type="text" class="form-control" id="i_nome" name="i_nome">
                               </div>
                               <div class="form-group col-md-5">
                                   <label for="i_sobrenome">Sobrenome</label>
-                                  <input type="text" class="form-control" id="i_sobrenome">
+                                  <input type="text" class="form-control" id="i_sobrenome" name="i_sobrenome">
                               </div>
                               <div class="form-group col-md-2">
                                   <label for="i_cpf">CPF</label>
-                                  <input type="text" class="form-control" id="i_cpf">
+                                  <input type="text" class="form-control" id="i_cpf" name="i_cpf">
                               </div>
                           </div>
                           <div class="form-row">
                               <div class="form-group col-md-2">
                                   <label for="i_data">Data de Nascimento</label>
-                                  <input type="date" class="form-control" id="i_data">
+                                  <input type="date" class="form-control" id="i_data" name="i_data">
                               </div>
                               <div class="form-group col-md-4">
                                   <label for="i_fone">Telefone</label>
-                                  <input type="text" class="form-control" id="i_fone">
+                                  <input type="text" class="form-control" id="i_fone" name="i_fone">
                               </div>
                               <div class="form-group col-md-4">
                                   <label for="i_cidade">Cidade</label>
-                                  <input type="text" class="form-control" id="i_cidade">
+                                  <input type="text" class="form-control" id="i_cidade" name="i_cidade">
                               </div>
                               <div class="form-group col-md-2">
                                   <label for="i_estado">Estado</label>
-                                  <input type="text" class="form-control" id="i_estado">
+                                  <input type="text" class="form-control" id="i_estado" name="i_estado">
                               </div>
                           </div>
                       <!-- FORM TERMINOU AQUI -->
                   </th>
               </tr>
               <tr>
-                  <table class="table">
-                      <thead>
-                          <tr>
-                              <th scope="col">Vacinas/Doses</th>
-                              <th scope="col">1ª Dose</th>
-                              <th scope="col">2ª Dose</th>
-                              <th scope="col">3ª Dose</th>
-                              <th scope="col">1º Reforço</th>
-                              <th scope="col">2º Reforço</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">Poliomielite</th>
-                              <td>carimbo/Data</td>
-                              <td>carimbo/Data</td>
-                              <td>carimbo/Data</td>
-                              <td>carimbo/Data</td>
-                              <td>carimbo/Data</td>
-                          </tr>
-                      </tbody>
-                  </table>
               </tr>
           </tbody>
       </table>
 
             <div class="btn-qrcode">
-            <button type="submit" class="btn btn-primary" name="btn-qrcode" id="btn-qrcode">Gerar QR Code</button>
+            <button type="submit" class="btn btn-primary" name="btn-qrcode" id="btn-qrcode">Gerar Relatório</button>
             </div>
       </form>
 
