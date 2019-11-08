@@ -26,6 +26,12 @@
               <th>Telefone</th>
               <th>Cidade</th>
               <th>Estado</th>
+              <th>Vacina/Dose</th>
+              <th>1° Dose</th>
+              <th>2° Dose</th>
+              <th>3° Dose</th>
+              <th>1° Reforço</th>
+              <th>2° Reforço</th>
 
             </tr>
           </thead>
@@ -40,6 +46,12 @@
                 <td>{{ $cartao->i_fone }}</td>
                 <td>{{ $cartao->i_cidade }}</td>
                 <td>{{ $cartao->i_estado }}</td>
+                <td>{{ $cartao->i_vacina_dose }}</td>
+                <td>{{ $cartao->i_primeira_dose }}</td>
+                <td>{{ $cartao->i_segunda_dose }}</td>
+                <td>{{ $cartao->i_terceira_dose }}</td>
+                <td>{{ $cartao->i_primeiro_reforco }}</td>
+                <td>{{ $cartao->i_segundo_reforco }}</td>
               </tr>
             @endforeach
           </tbody>

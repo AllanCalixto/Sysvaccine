@@ -54,6 +54,31 @@
                                   <label for="i_estado">Estado</label>
                                   <input type="text" class="form-control" id="i_estado" name="i_estado">
                               </div>
+
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">Vacina/dose</label>
+                                  <input type="text" class="form-control" id="i_vacina_dose" name="i_vacina_dose">
+                              </div>
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">1° Dose</label>
+                                  <input type="text" class="form-control" id="i_primeira_dose" name="i_primeira_dose">
+                              </div>
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">2° Dose</label>
+                                  <input type="text" class="form-control" id="i_segunda_dose" name="i_segunda_dose">
+                              </div>
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">3° Dose</label>
+                                  <input type="text" class="form-control" id="i_terceira_dose" name="i_terceira_dose">
+                              </div>
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">1° Reforço</label>
+                                  <input type="text" class="form-control" id="i_primeiro_reforco" name="i_primeiro_reforco">
+                              </div>
+                              <div class="form-group col-md-2">
+                                  <label for="i_estado">2° Reforço</label>
+                                  <input type="text" class="form-control" id="i_segundo_reforco" name="i_segundo_reforco">
+                              </div>
                           </div>
                       <!-- FORM TERMINOU AQUI -->
                   </th>

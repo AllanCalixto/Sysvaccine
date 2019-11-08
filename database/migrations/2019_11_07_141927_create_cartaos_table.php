@@ -22,6 +22,12 @@ class CreateCartaosTable extends Migration
             $table->string('i_fone');
             $table->string('i_cidade');
             $table->string('i_estado');
+            $table->string('i_vacina_dose');
+            $table->string('i_primeira_dose');
+            $table->string('i_segunda_dose');
+            $table->string('i_terceira_dose');
+            $table->string('i_primeiro_reforco');
+            $table->string('i_segundo_reforco');
             $table->timestamps();
         });
     }

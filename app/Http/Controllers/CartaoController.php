@@ -19,7 +19,7 @@ class CartaoController extends Controller
 
     public function consultar()
     {
-      
+
     }
 
     /**
@@ -42,13 +42,21 @@ class CartaoController extends Controller
     public function store(Request $request)
     {
       return Cartao::create([
-        'i_nome'          =>$request['i_nome'],
-        'i_sobrenome'     =>$request['i_sobrenome'],
-        'i_cpf'           =>$request['i_cpf'],
-        'i_data'          =>$request['i_data'],
-        'i_fone'          =>$request['i_fone'],
-        'i_cidade'        =>$request['i_cidade'],
-        'i_estado'        =>$request['i_estado'],
+        
+        'i_nome'            =>$request['i_nome'],
+        'i_sobrenome'       =>$request['i_sobrenome'],
+        'i_cpf'             =>$request['i_cpf'],
+        'i_data'            =>$request['i_data'],
+        'i_fone'            =>$request['i_fone'],
+        'i_cidade'          =>$request['i_cidade'],
+        'i_estado'          =>$request['i_estado'],
+        'i_vacina_dose'     =>$request['i_vacina_dose'],
+        'i_primeira_dose'   =>$request['i_primeira_dose'],
+        'i_segunda_dose'    =>$request['i_segunda_dose'],
+        'i_terceira_dose'   =>$request['i_terceira_dose'],
+        'i_primeiro_reforco'=>$request['i_primeiro_reforco'],
+        'i_segundo_reforco' =>$request['i_segundo_reforco'],
+
       ]);
       return view('sucesso');
     }
