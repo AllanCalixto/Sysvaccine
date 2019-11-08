@@ -37,5 +37,5 @@ Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store"
 // ROTAS QRCODE
 
 
-Route::get('dashboard/qrcode', function(){
+Route::get('dashboard/cartao/emitir/relatorio/qrcode', function(){
   return QrCode :: size (300) -> generate ('Cartao gerado com sucesso!');})->name('qrcode');

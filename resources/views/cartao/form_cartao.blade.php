@@ -56,7 +56,8 @@
             @endforeach
           </tbody>
         </table>
-          <button type="submit" class="btn btn-primary" onclick="window.print()" name="btn-imprimir" id="btn-imprimir">Imprimir</button>
+          <button type="btn" class="btn btn-primary" onclick="window.print()" name="btn-imprimir" id="btn-imprimir">Imprimir</button>
+          <a href="http://localhost:8000/dashboard/cartao/emitir/relatorio/qrcode" class="btn btn-primary">Gerar QrCode</a>
     </div>
   </div>
 
