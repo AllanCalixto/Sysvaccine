@@ -27,34 +27,24 @@
 
 
 
-<div class="nav-primary">
-<nav>
-    <ul>
-
-            <li class="description"><a href="{{route('perfil')}}"><i class="fas fa-address-card">  PERFIL</i></a></li>
-
-
-
-
-            <li class="description"><a href="{{route('cadastrarvacina')}}"><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
-
-
-
-             <li class="description"><a href="{{route('emitircartao')}}"><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
-
-
-
-            <li class="description"><a href="http://localhost:8000/dashboard/cartao/emitir/relatorio"><i class="fas fa-search">  VISUALIZAR CARTÕES</i></a></li>
-
-
-
-             <li class="description"><a href=""><i class="fas fa-times-circle">  SAIR</i></a></li>
-
-
-    </ul>
-</nav>
-
+<div class="container">
+    <div id="sidebar">
+        <div class="sidebar-container">
+          <nav>
+                <ul>
+                   <li class="description"><a href="{{route('perfil')}}"><i class="fas fa-address-card">  PERFIL</i></a></li>
+                   <li class="description"><a href="{{route('cadastrarvacina')}}"><i class="fas fa-tasks">  CADASTRAR VACINA</i></a></li>
+                   <li class="description"><a href="{{route('emitircartao')}}"><i class="fas fa-share-square">  EMITIR CARTÃO</i></a></li>
+                   <li class="description"><a href="http://localhost:8000/dashboard/cartao/emitir/relatorio"><i class="fas fa-search">  VISUALIZAR CARTÕES</i></a></li>
+                   <li class="description"><a href=""><i class="fas fa-times-circle">  SAIR</i></a></li> 
+                
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
+
+
 
 </body>
 

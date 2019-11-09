@@ -89,14 +89,12 @@
       </table>
 
             <div class="btn-qrcode">
+            <a href="http://localhost:8000/dashboard/cartao/emitir/relatorio" class="btn btn-primary" id="btn-visualizar">Vizualizar</a>
               <button type="submit" class="btn btn-primary" name="btn-qrcode" id="btn-qrcode">Emitir Cartão</button>
             </div>
       </form>
-      <div class="container-fluid">
-        <div class="row-fluid">
-            <a href="http://localhost:8000/dashboard/cartao/emitir/relatorio" class="btn btn-primary">Vizualizar</a>
-        </div>
-
+     
+      
       </div>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
