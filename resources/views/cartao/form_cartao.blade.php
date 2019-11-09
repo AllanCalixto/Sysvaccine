@@ -17,17 +17,15 @@
       <h5 class="card-title">Cartão de Vacinas</h5>
         <table class="table table-ordered table-hover">
           <thead>
-            <!-- DADOS DA TABELA USERS -->
             <tr>
               <th>Id</th>
               <th>Nome</th>
               <th>Sobrenome</th>
+              <th>CPF</th>
               <th>Nascimento</th>
+              <th>Telefone</th>
               <th>Cidade</th>
               <th>Estado</th>
-              <th>CPF</th>
-              
-              <!-- DADOS DA TABELA VACINAS -->
               <th>Vacina/Dose</th>
               <th>1° Dose</th>
               <th>2° Dose</th>
