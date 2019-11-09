@@ -26,58 +26,48 @@
                            <div class="form-row">
                               <div class="form-group col-md-5">
                                   <label for="i_nome">Nome</label>
-                                  <input type="text" class="form-control" id="i_nome" name="i_nome">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-5">
                                   <label for="i_sobrenome">Sobrenome</label>
-                                  <input type="text" class="form-control" id="i_sobrenome" name="i_sobrenome">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-2">
                                   <label for="i_cpf">CPF</label>
-                                  <input type="text" class="form-control" id="i_cpf" name="i_cpf">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                           </div>
                           <div class="form-row">
                               <div class="form-group col-md-2">
                                   <label for="i_data">Data de Nascimento</label>
-                                  <input type="date" class="form-control" id="i_data" name="i_data">
+                                  <input type="date" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-4">
                                   <label for="i_fone">Telefone</label>
-                                  <input type="text" class="form-control" id="i_fone" name="i_fone">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-4">
                                   <label for="i_cidade">Cidade</label>
-                                  <input type="text" class="form-control" id="i_cidade" name="i_cidade">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-2">
                                   <label for="i_estado">Estado</label>
-                                  <input type="text" class="form-control" id="i_estado" name="i_estado">
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
 
                               <div class="form-group col-md-2">
-                                  <label for="i_estado">Vacina/dose</label>
-                                  <input type="text" class="form-control" id="i_vacina_dose" name="i_vacina_dose">
+                                  <label for="i_estado">Vacina</label>
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-2">
-                                  <label for="i_estado">1° Dose</label>
-                                  <input type="text" class="form-control" id="i_primeira_dose" name="i_primeira_dose">
+                                  <label for="i_estado">Dose</label>
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
                               <div class="form-group col-md-2">
-                                  <label for="i_estado">2° Dose</label>
-                                  <input type="text" class="form-control" id="i_segunda_dose" name="i_segunda_dose">
+                                  <label for="i_estado">Data da Realização</label>
+                                  <input type="text" class="form-control" id="" name="">
                               </div>
-                              <div class="form-group col-md-2">
-                                  <label for="i_estado">3° Dose</label>
-                                  <input type="text" class="form-control" id="i_terceira_dose" name="i_terceira_dose">
-                              </div>
-                              <div class="form-group col-md-2">
-                                  <label for="i_estado">1° Reforço</label>
-                                  <input type="text" class="form-control" id="i_primeiro_reforco" name="i_primeiro_reforco">
-                              </div>
-                              <div class="form-group col-md-2">
-                                  <label for="i_estado">2° Reforço</label>
-                                  <input type="text" class="form-control" id="i_segundo_reforco" name="i_segundo_reforco">
+                              
                               </div>
                           </div>
                       <!-- FORM TERMINOU AQUI -->
