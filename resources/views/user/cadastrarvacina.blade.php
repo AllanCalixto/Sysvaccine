@@ -14,7 +14,7 @@
     <title>Cadastrar Vacina</title>
 </head>
 
-<body>
+<body background="img/sysvaccine.jpg">
     <table class="table">
         <thead>
             <tr>

@@ -2,60 +2,44 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     vertical-align: baseline;
+    border: 0;
 }
 
+#fundo-img {
+    background-attachment: fixed;
+    background-size: 100%;
+}
 
-/*reset do css*/
+#div-nav {
+    background-color: rgba(0, 77, 122, 0.822);
+}
 
-.header-primary {
+#a-font {
+    color: white;
+    margin-top: .4rem;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#nav-primaria {
+    color: white;
+}
+
+#label-header {
+    margin-top: .4rem;
+}
+
+#jumbotron {
+    background-color: rgba(206, 205, 205, 0.705);
+    margin-top: 8%;
+    width: 51%;
+    height: 25%;
+    margin-left: 30%;
+}
+
+#btn-jumbo {
     background-color: rgb(0, 78, 122);
-    z-index: 100;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.container {
-    background-color: rgba(0, 77, 122, 0.651);
-    z-index: 90;
-    position: absolute;
-    width: 200px;
-    height: 100%;
-}
-
-ul {
-    margin-top: 50px;
-    width: 100%;
-    font-family: montserrat;
-    font-size: 14px;
-    text-align: left;
-    color: white;
-    list-style: none;
-    position: absolute;
-}
-
-a {
-    text-decoration: none;
-    font-size: 12px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    padding: 20px 5px;
-}
-
-a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgba(0, 77, 122, 0.651);
-    transition: background-color .5s;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    border-color: rgb(0, 78, 122);
+    font-weight: bold;
 }
