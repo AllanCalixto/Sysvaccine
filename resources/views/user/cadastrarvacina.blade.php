@@ -60,10 +60,12 @@
                             <label for="exampleFormControlSelect1">Tipo de Dose </label>
                             <select class="form-control" id="dose" name="dose">
                                           <option value="#"></option>
+                                          <option value="unica">Dose Única</option>
                                           <option value="dose1">1º Dose</option>
                                           <option value="dose2">2º Dose</option>
                                           <option value="dose3">3º Dose</option>
                                           <option value="reforco">Reforço</option>
+                                          
                                         </select>
                         </div>
 
