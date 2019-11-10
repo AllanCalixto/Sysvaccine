@@ -31,7 +31,7 @@
     </div>
         <a class="nav-link" id="a-font" href="{{route('perfil')}}">Perfil</a>
         <a class="nav-link" id="a-font" href="{{route('cadastrarvacina')}}">Cadastrar Vacina</a>
-        <a class="nav-link" id="a-font" href="{{route('emitircartao')}}">Emitir Cartão</i></a>
+        <a class="nav-link" id="a-font" href="{{route('listarelatorio')}}">Emitir Cartão</i></a>
         <a class="nav-link" id="a-font" href="http://localhost:8000/dashboard/cartao/emitir/relatorio">Visualizar Cartão</i>
         <a class="nav-link" id="a-font" href="">Sair</a>
       </div>

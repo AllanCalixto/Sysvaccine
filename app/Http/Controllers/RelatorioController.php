@@ -2,26 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Auth;
-use App\User;
+use App\Relatorio;
 
-class UserController extends Controller
+class RelatorioController extends Controller
 {
-
-    public function authenticate(Request $request)
-    {
-      $credentials = $request->only('email','password');
-
-      if(Auth::attempt($credentials))
-      {
-
-        return view('dashboard');
-      }
-      else {
-        return redirect()->back()->with('msg','Credenciais Invalidas');
-      }
-    }
     /**
      * Display a listing of the resource.
      *
@@ -29,46 +15,21 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.index');
+        $relatorio = Relatorio::all();
+      return view('relatorio', compact('relatorio'));
+
     }
-
-    public function resetpassword(){
-      return view('user.esqueciminhasenha');
-    }
-
-    public function perfil(){
-        return view('perfil');
-    }
-
-
-    public function sair(){
-        return view('index');
-    }
-
-
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-
-        return User::create([
-          'name'        =>$request['name'],
-          'lastname'    =>$request['lastname'],
-          'birth'       =>$request['birth'],
-          'fone'        =>$request['fone'],
-          'city'        =>$request['city'],
-          'uf'          =>$request['uf'],
-          'sexo'        =>$request['sexo'],
-          'cpf'         =>$request['cpf'],
-          'email'       =>$request['email'],
-          'password'    =>bcrypt($request['password']),
-        ]);
+        
+         
     }
-   
 
     /**
      * Store a newly created resource in storage.
@@ -78,7 +39,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
+        
     }
 
     /**

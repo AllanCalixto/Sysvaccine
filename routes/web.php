@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,9 @@ Route::get('dashboard/cartao/emitir',        "CartaoController@index")->name('em
 Route::get('dashboard/cartao/emitir/relatorio',        "CartaoController@create")->name('relatorio');
 Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store")->name('relatorio');
 
+Route::get('/dashboard/cartao/relatorio', function(){
+  return view('relatorio');
+});
 
 
 
