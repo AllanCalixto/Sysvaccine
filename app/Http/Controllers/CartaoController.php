@@ -42,7 +42,7 @@ class CartaoController extends Controller
     public function store(Request $request)
     {
       return Cartao::create([
-        
+
         'i_nome'            =>$request['i_nome'],
         'i_sobrenome'       =>$request['i_sobrenome'],
         'i_cpf'             =>$request['i_cpf'],
