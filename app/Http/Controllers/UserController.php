@@ -37,7 +37,7 @@ class UserController extends Controller
     }
 
     public function perfil(){
-        return view('perfil');
+        return view('user.perfil');
     }
 
 
