@@ -38,4 +38,4 @@ Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store"
 
 
 Route::get('dashboard/cartao/emitir/relatorio/qrcode', function(){
-  return QrCode :: size (300) -> generate ('Cartao gerado com sucesso!');})->name('qrcode');
+  return QrCode :: size (300) -> generate ('https://drive.google.com/open?id=1Gw438FUiNbdyK0bAACTZtqdsdMW-BaMK');})->name('qrcode');
