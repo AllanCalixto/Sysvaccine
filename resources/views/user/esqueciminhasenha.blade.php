@@ -50,7 +50,7 @@
                                         <div class="col-md-6"><input id="email" type="email" name="email" required="required" autocomplete="email" autofocus="autofocus" class="form-control "></div>
                                     </div>
                                     <div class="form-group row mb-0">
-                                        <div class="col-md-6 offset-md-4"><button type="submit" class="btn btn-primary">
+                                        <div class="col-md-6 offset-md-4"><button type="submit" class="btn btn-primary" id="esqueci">
                                     Redefina sua Senha
                                 </button></div>
                                     </div>
