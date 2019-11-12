@@ -78,44 +78,44 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="l_nome">Nome</label>
-              <input type="text" class="form-control" id="t_nome" >
+              <label class="form-control"> {{$teste->name}} </label>
            </div>
            <div class="form-group col-md-6">
              <label for="l_sobrenome">Sobrenome</label>
-             <input type="text" class="form-control" id="t_sobrenome" >
+             <label class="form-control" > {{$teste->lastname}} </label>
            </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="l_mail">E-mail</label>
-              <input type="email" class="form-control" id="t_mail">
+              <label class="form-control" > {{$teste->email}} </label>
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="l_data">Data de Nascimento</label>
-              <input type="date" class="form-control" id="t_data" >
+            <div class="form-group col-md-7">
+              <label for="l_data">Dt de Nascimento</label>
+              <label class="form-control" > {{$teste->birth}} </label>
             </div>
-            <div class="form-group col-md-6">
-              <label for="l_cpf"><span class="glyphicon glyphicon-credit-card"></span> CPF</label>
-              <input type="text" class="form-control" id="t_cpf" >
+            <div class="form-group col-md-7>
+              <label for="l_cpf">CPF</label>
+              <label class="form-control" > {{$teste->cpf}} </label>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="l_fone">Telefone</label>
-              <input type="text" class="form-control" id="t_fone">
+              <label class="form-control" > {{$teste->fone}} </label>
             </div>
             <div class="form-group col-md-4">
               <label for="t_city">Cidade</label>
-              <input type="text" class="form-control" id="t_city">
+              <label class="form-control" > {{$teste->city}} </label>
             </div>
             <div class="form-group col-md-3">
               <label for="t_estado">Estado</label>
-              <input type="text" class="form-control" id="t_estado">
+              <label class="form-control" > {{$teste->uf}} </label>
             </div>
           </div>
 

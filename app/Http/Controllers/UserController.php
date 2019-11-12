@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
@@ -15,8 +16,8 @@ class UserController extends Controller
 
       if(Auth::attempt($credentials))
       {
-
-        return view('dashboard');
+        $foo = \DB::table('users')->where('email', $credentials['email'])->first();
+        return view('dashboard', ['teste' => $foo]);
       }
       else {
         return redirect()->back()->with('msg','Credenciais Invalidas');
