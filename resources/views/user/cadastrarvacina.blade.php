@@ -18,7 +18,7 @@
     <table class="table">
         <thead>
             <tr>
-           
+
                 <th scope="col"><i class="fas fa-list-alt"></i>  Cadastro de Vacina  </th>
             </tr>
         </thead>
@@ -82,7 +82,7 @@
                     </form>
                 </th>
             </tr>
-    
+
         </tbody>
     </table>
 
