@@ -20,20 +20,6 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
 
 
-
-
-    <style>
-      .modal-header, h4, .close {
-        background-color: #004D7A;
-        color:white !important;
-        text-align: center;
-        font-size: 30px;
-      }
-      .modal-footer {
-        background-color: #f9f9f9;
-      }
-    </style>
-
 </head>
 
 <body id="fundo-img" background="img/sysvaccine.jpg">
@@ -42,7 +28,7 @@
       <div class="container d-flex flex-column flex-md-row justify-content-between" id="div-nav">
       <div class="navbar-header" id="div-header">
        <label id="label-header">
-        <h2>SysVaccine</h2>
+        <img src="img/logo.png" alt="" id="logo">
         </label>
     </div>
         <a class="nav-link a-font" id="myBtn"  href="#">Perfil</a>
