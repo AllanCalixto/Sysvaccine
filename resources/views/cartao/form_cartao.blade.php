@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/f82b3ec5fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" {{ asset('css/formcartao.css')}}">
     <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-png" />
     <link rel="stylesheet" href="{{asset('css/emitircartao.css')}}">
+    <script src="https://kit.fontawesome.com/f82b3ec5fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Cartão de Vacina</title>
@@ -14,7 +16,7 @@
 <body>
   <div class="card border">
     <div class="card-body">
-      <h5 class="card-title">Cartão de Vacinas</h5>
+      <h5 class="card-title"><i class="fas fa-list-alt"></i>  Cartão de Vacinas</h5>
         <table class="table table-ordered table-hover">
           <thead>
             <tr>
@@ -57,7 +59,7 @@
           </tbody>
         </table>
           <button type="btn" class="btn btn-primary" onclick="window.print()" name="btn-imprimir" id="btn-imprimir">Imprimir</button>
-          <a href="http://localhost:8000/dashboard/cartao/emitir/relatorio/qrcode" class="btn btn-primary">Gerar QrCode</a>
+          <a href="http://localhost:8000/dashboard/cartao/emitir/relatorio/qrcode" class="btn btn-primary" id="btn-qrcode">Gerar QrCode</a>
     </div>
   </div>
 
