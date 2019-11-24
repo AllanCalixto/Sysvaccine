@@ -22,12 +22,12 @@ Route::get('/dashboard/consultarhistorico', "UserController@consultarhistorico")
 
 // ROTAS DE VACINAS
 Route::get('dashboard/vacinas/cadastrar',    "VacinaController@index")->name('cadastrarvacina');
-Route::post('dashboard/vacinas/cadastrar',   "VacinaController@create")->name('novavacina');
+Route::post('dashboard/vacinas/cadastrar',   "VacinaController@store")->name('user.cadastrarvacina');
 
 // ROTAS DE CARTAO
 Route::get('dashboard/cartao/emitir',        "CartaoController@index")->name('emitircartao');
 Route::get('dashboard/cartao/emitir/relatorio',        "CartaoController@create")->name('relatorio');
-Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store")->name('relatorio');
+Route::post('dashboard/cartao/emitir/relatorio',        "CartaoController@store")->name('cartao.emitircartao');
 
 
 

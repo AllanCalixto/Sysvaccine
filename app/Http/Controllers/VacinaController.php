@@ -23,11 +23,11 @@ class VacinaController extends Controller
      */
     public function create(Request $request)
     {
-      return Vacina::create([
-        'nomevacina'  =>$request['nomevacina'],
-        'dose'        =>$request['dose'],
-        'data'      =>$request['data'],
-      ]);
+      // return Vacina::create([
+      //   'nomevacina'  =>$request['nomevacina'],
+      //   'dose'        =>$request['dose'],
+      //   'data'      =>$request['data'],
+      // ]);
     }
 
     /**
@@ -36,10 +36,17 @@ class VacinaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Vacina $vacina)
     {
-        //
+        $vacina = new Vacina;
+        $vacina->nomevacina = $request->nomevacina;
+        $vacina->dose       = $request->dose;
+        $vacina->data       = $request->data;
+        $vacina->save();
+        return redirect()->route('user.cadastrarvacina')->with('msg', 'Vacina cadastrada com sucesso !');
     }
+
+    
 
     /**
      * Display the specified resource.

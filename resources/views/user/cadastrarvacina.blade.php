@@ -12,6 +12,11 @@
 
 
     <title>Cadastrar Vacina</title>
+    @if(session('msg'))
+        <div class="alert alert-success">
+            {{session('msg')}}
+        </div>
+      @endif
 </head>
 
 <body background="img/sysvaccine.jpg">
@@ -25,7 +30,7 @@
         <tbody>
             <tr>
                 <th scope="row">
-                    <form class="" action="{{route('cadastrarvacina')}}" method="post" onsubmit="">
+                    <form class="" action="{{route('user.cadastrarvacina')}}" method="post" onsubmit="">
                       @csrf
                         <!-- para preenchimento do back-end -->
                         <div class="form-group">

@@ -39,26 +39,44 @@ class CartaoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Cartao $cartao)
     {
-      return Cartao::create([
-        
-        'i_nome'            =>$request['i_nome'],
-        'i_sobrenome'       =>$request['i_sobrenome'],
-        'i_cpf'             =>$request['i_cpf'],
-        'i_data'            =>$request['i_data'],
-        'i_fone'            =>$request['i_fone'],
-        'i_cidade'          =>$request['i_cidade'],
-        'i_estado'          =>$request['i_estado'],
-        'i_vacina_dose'     =>$request['i_vacina_dose'],
-        'i_primeira_dose'   =>$request['i_primeira_dose'],
-        'i_segunda_dose'    =>$request['i_segunda_dose'],
-        'i_terceira_dose'   =>$request['i_terceira_dose'],
-        'i_primeiro_reforco'=>$request['i_primeiro_reforco'],
-        'i_segundo_reforco' =>$request['i_segundo_reforco'],
 
-      ]);
-      return view('sucesso');
+        $cartao = new Cartao;
+
+        $cartao->i_nome              =$request->i_nome;
+        $cartao->i_sobrenome         =$request->i_sobrenome;
+        $cartao->i_cpf               =$request->i_cpf;
+        $cartao->i_data              =$request->i_data;
+        $cartao->i_fone              =$request->i_fone;
+        $cartao->i_cidade            =$request->i_cidade;
+        $cartao->i_estado            =$request->i_estado;
+        $cartao->i_vacina_dose       =$request->i_vacina_dose;
+        $cartao->i_primeira_dose     =$request->i_primeira_dose;
+        $cartao->i_segunda_dose      =$request->i_segunda_dose;
+        $cartao->i_terceira_dose     =$request->i_terceira_dose;
+        $cartao->i_primeiro_reforco  =$request->i_primeiro_reforco;
+        $cartao->i_segundo_reforco   =$request->i_segundo_reforco;
+        $cartao->save();
+
+      // return Cartao::create([
+        
+      //   'i_nome'            =>$request['i_nome'],
+      //   'i_sobrenome'       =>$request['i_sobrenome'],
+      //   'i_cpf'             =>$request['i_cpf'],
+      //   'i_data'            =>$request['i_data'],
+      //   'i_fone'            =>$request['i_fone'],
+      //   'i_cidade'          =>$request['i_cidade'],
+      //   'i_estado'          =>$request['i_estado'],
+      //   'i_vacina_dose'     =>$request['i_vacina_dose'],
+      //   'i_primeira_dose'   =>$request['i_primeira_dose'],
+      //   'i_segunda_dose'    =>$request['i_segunda_dose'],
+      //   'i_terceira_dose'   =>$request['i_terceira_dose'],
+      //   'i_primeiro_reforco'=>$request['i_primeiro_reforco'],
+      //   'i_segundo_reforco' =>$request['i_segundo_reforco'],
+
+      // ]);
+      return redirect()->route('cartao.emitircartao')->with('msg', 'Cartão emitido com sucesso !');
     }
 
     /**
