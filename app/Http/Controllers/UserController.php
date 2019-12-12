@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
@@ -53,20 +54,22 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create(Request $request, User $user)
     {
-        return User::create([
-          'name'        =>$request['name'],
-          'lastname'    =>$request['lastname'],
-          'birth'       =>$request['birth'],
-          'fone'        =>$request['fone'],
-          'city'        =>$request['city'],
-          'uf'          =>$request['uf'],
-          'sexo'        =>$request['sexo'],
-          'cpf'         =>$request['cpf'],
-          'email'       =>$request['email'],
-          'password'    =>bcrypt($request['password']),
-        ]);
+          $user = new User;
+          $user->name     =$request->name;        
+          $user->lastname =$request->lastname;    
+          $user->birth    =$request->birth;      
+          $user->fone     =$request->fone;        
+          $user->city     =$request->city;        
+          $user->uf       =$request->uf;          
+          $user->sexo     =$request->sexo;        
+          $user->cpf      =$request->cpf;       
+          $user->email    =$request->email;      
+          $user->password =Hash::make($request->password);
+          $user->save();
+          return redirect()->route('create')->with('msg1','Usuário cadastrado com sucesso !');    
+        
     }
 
     /**
@@ -75,10 +78,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-
-    }
+    
 
     /**
      * Display the specified resource.
